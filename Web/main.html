@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ivashchenko Nikita 28/1</title>
+</head>
+<body>
+    <h1 id="Jakor"><center>Задание 1</center></h1>
+    <li><a href="http://example.com">1.Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+    <li><a href = "https://example.com/" >2.Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
+    <li><a href = "ftp://example.com/1.txt"> 3.Ссылка на файл на сервере FTP без авторизации  </a></li>
+    <li><a href = "ftp://log:password@example.com/1.txt"> 4.Ссылка на файл на сервере FTP с авторизацией </a></li>
+    <a href = "Jakor"></a>
+    <li><a href = "https://zen.yandex.ru/" > 5.Ссылка на фрагмент страницы некоторого сайта </a></li>
+    <li><a href = "#Jakor" > 6.Ссылка на фрагмент текущей страницы </a></li>
+    <li><a href = "https://translate.google.ru/#view=home&op=translate&sl=ru&tl=en&text=текст" > 7.Ссылка с более чем двумя параметрами в URL; </a></li>
+    <li title = "Видеохостинг"><a href = "https://www.youtube.com/"> 8.Список ссылок основной навигации сайта с подписями title;   </a></li>
+    <li title = "Временно не работает"><a> 9.Ссылка без href </a></li>
+    <li><a href = ""> 10.Cсылка с пустым href </a></li>
+    <li><a href = "https://github.com/" rel = "nofollow"> 11.Ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><noindex><a href = "https://kubsu.ru/" >12.Ссылка, запрещенная для индексации поисковиками</a></noindex></li>
+    <li><a href="http://example.com">14.<img src="image.jpg" width="200"  height="200" border="0" alt="Ссылка-картинка"></a></li>
+    <li><a href = "../index.html " > 18.Относительная ссылка на страницу в каталоге уровнем выше текущего </a></li>
+    <li><a href = " ../../index.html" > 19.Относительная ссылка на страницу в каталоге двумя уровнями выше </a></li>
+    <li><a href = " http://example.com/main " > 20.Cокращенная ссылка на главную </a></li>
+    <li><a href = " http://example.com/main/page" > 21.Cокращенная ссылка на внутреннюю. </a></li>
+    <h2><center>Форма</center></h2>
+<form action="/" method="POST">
+    <label>
+            ФИО:<br>
+            <input name="field-name-1" value="">
+    </label><br/>
+    <label>
+            Почта:<br>
+            <input name="field-email" value="" type="email">
+    </label><br/>
+    <label>
+     День рождения:<br>
+    <input name="field-date" value="" type="date"> </label>
+    
+    <br>Пол<br/>
+    <label><input type="radio" name="radio-group-1" value="Значение1" /> Женский</label>
+    <label><input type="radio" name="radio-group-1" value="Значение2" /> Мужской</label><br/>
+    
+    Число конечностей<br/>
+    <label><input type="radio" name="radio-group-1" value="Значение1" /> 1</label>
+    <label><input type="radio" name="radio-group-1" value="Значение2" /> 2</label>
+    <label><input type="radio" name="radio-group-1" value="Значение3" /> 4</label>
+    
+    <label>
+    <br>Сверхспособность<br/>
+            <select name="field-name-4[]"
+              multiple="multiple">
+              <option value="Значение1" selected="selected">Ничего</option>
+              <option value="Значение2">Бессмертие</option>
+              <option value="Значение3">Прохождение сквозь стены</option>
+              <option value="Значение4">Левитация</option>/
+            </select>
+    </label>
+    
+    <label> 
+        <br>Биография<br/>
+        <textarea name="field-name-2"></textarea> 
+    </label>
+    
+    <br>Кнопочка отправить<br/> 
+    <label> 
+        <input type="checkbox" name="check-1" /> 
+    </label><br/>
+        <input type="submit" value="Отправить"/>
+</form>
+</body>
+</html>

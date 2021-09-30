@@ -2,13 +2,19 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css">
+    <link rel="stylesheet" href="css/stile.css.css">
     <title>Ivashchenko Nikita 28/1</title>
 </head>
-<body>
+<body style="margin: 0;">
+    <div id="main-aisde-wrapper">
     <header>
     <div class="banner">
-    <a href="#home"><img id="logo" src="image.png" alt="Логотип"/></a>
+    <a href="#home"><img style="float:left; margin:1px; width:150px; height:96px;" src="image.png"/><FIELDSET>
+       
+        <h1>Логотип </h1>
+        </FIELDSET>
+</a>
+        
     </div>
     </header>
     <div class="container">
@@ -19,6 +25,11 @@
     <a href="https://www.kubsu.ru/ru/abiturient" title="Абитуриентам">Абитуриентам</a>
     <a href="https://www.kubsu.ru/ru/studlife" title="Студентам">Студентам</a>
     </nav>
+                <nav>
+    <h3 align = left> Навигация по сайту :</h3>
+     <a href="#chap1">Таблица</a> | 
+                <a href="#chap3" >Форма</a> </nav>
+
     <h1 id="Jakor"><center>Задание 1</center></h1>
     <li><a href="http://example.com">1.Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
     <li><a href = "https://example.com/" >2.Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
@@ -39,65 +50,25 @@
     <li><a href = " http://example.com/main " > 20.Cокращенная ссылка на главную </a></li>
     <li><a href = " http://example.com/main/page" > 21.Cокращенная ссылка на внутреннюю. </a></li>
         <div class="tabl">
-            <table bordercolor="black" border="3" width="50%">
+            <h1 align=center>Table</h1>
 
-<!-- cтрока 1 -->
-
-<tr align="center">
-
-<td>столбец</td>
-
-<td>столбец</td>
-
-<td>столбец</td>
-
-</tr>
-
-<!-- cтрока 2 -->
-
-<tr align="center">
-
-<td colspan="2">ячейка</td>
-
-<td>ячейка</td>
-
-</tr>
-
-<!-- cтрока 3 -->
-
-<tr align="center">
-
-<td>ячейка</td>
-
-<td>ячейка</td>
-
-<td rowspan="3">ячейка</td>
-
-</tr>
-
-<!-- cтрока 4 -->
-
-<tr align="center">
-
-<td>ячейка</td>
-
-<td>ячейка</td>
-
-</tr>
-
-<!-- cтрока 5 -->
-
-<tr align="center">
-
-<td>ячейка</td>
-
-<td>ячейка</td>
-
-</tr>
-
-</table>
+<a id="chap1"></a>
+<TABLE BORDER="2">
+<td colspan="4" h1 align=center>Оценки за 6 семестров</td>
+<tr><th>Ин.яз.</th>
+<th>WEB</th>
+    <th>ООП</th></tr>
+    <tr bgcolor=#0000FF><td><H4 ALIGN=CENTER>4</H4></td><td><H4 ALIGN=CENTER>4</H4></td><td><H4 ALIGN=CENTER>3</H4></td>
+    <tr bgcolor=#FFFF00><td><H4 ALIGN=CENTER>4</H4></td><td><H4 ALIGN=CENTER>4</H4></td><td><H4 ALIGN=CENTER>4</H4></td>
+    <tr bgcolor=#0000FF><td><H4 ALIGN=CENTER>4</H4></td><td><H4 ALIGN=CENTER>3</H4></td><td><H4 ALIGN=CENTER>3</H4></td>
+    <tr bgcolor=#FFFF00><td><H4 ALIGN=CENTER>4</H4></td><td><H4 ALIGN=CENTER>5</H4></td><td><H4 ALIGN=CENTER>4</H4></td>
+    <tr bgcolor=#0000FF><td><H4 ALIGN=CENTER>5</H4></td><td><H4 ALIGN=CENTER>5</H4></td><td><H4 ALIGN=CENTER>4</H4></td>
+    <tr bgcolor=#FFFF00><td><H4 ALIGN=CENTER>4</H4></td><td><H4 ALIGN=CENTER>4</H4></td><td><H4 ALIGN=CENTER>4</H4></td>
+    </TABLE>
+    </div>
+    <a id="chap3"></a>
     <h2><center>Форма</center></h2>
-<form action="/" method="POST">
+    <form action="/" method="POST">
     <label>
             ФИО:<br>
             <input name="field-name-1" value="">
@@ -115,9 +86,9 @@
     <label><input type="radio" name="radio-group-1" value="Значение2" /> Мужской</label><br/>
     
     Число конечностей<br/>
-    <label><input type="radio" name="radio-group-1" value="Значение1" /> 1</label>
-    <label><input type="radio" name="radio-group-1" value="Значение2" /> 2</label>
-    <label><input type="radio" name="radio-group-1" value="Значение3" /> 4</label>
+    <label><input type="radio" name="radio-group-2" value="Значение1" /> 1</label>
+    <label><input type="radio" name="radio-group-2" value="Значение2" /> 2</label>
+    <label><input type="radio" name="radio-group-2" value="Значение3" /> 4</label>
     
     <label>
     <br>Сверхспособность<br/>
@@ -142,10 +113,10 @@
         <input type="submit" value="Отправить"/>
     
     </form>
-    </div>
-    </div>
     <footer>
         <h2>Footer</h2>
     </footer>
+    </div>
+    </div>
 </body>
 </html>

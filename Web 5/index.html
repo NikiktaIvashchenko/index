@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head><title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<form>
+  <h1>Цена</h1>
+  <input name="field1" type="text">
+  <h2>Кол-во товара</h2>
+  <input name="field2" type="text">
+  <button id="button1" onclick="return click1();">OK</button>
+  <button id="my-button">Сброс</button>
+</form>
+
+<script>
+
+function click1() {
+  let f1 = document.getElementsByName("field1");
+  let f2 = document.getElementsByName("field2");
+  let r = document.getElementById("result");
+  r.innerHTML = f1[0].value * f2[0].value;
+  return false;
+}
+
+</script>  
+<h3> Результат </h3>
+    <div id="result"></div>
+
+
+<script>
+function onClick() {
+  alert("Сброс выполнен");
+}
+
+window.addEventListener('DOMContentLoaded', function (event) {
+  console.log("DOM fully loaded and parsed");
+  let b = document.getElementById("my-button");
+  b.addEventListener("click", onClick);
+});
+</script>

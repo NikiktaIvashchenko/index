@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Калькулятор</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  	<link href="README.js" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container-fluid ">
+	<div class="row d-flex ">
+		<form name="form">
+			<h4>Выберите товар:</h4>
+			<div class="item">
+				<input type="text" id="kol" oninput="updatePrice()" placeholder="Количество товара: "/>
+					<select name="prodType">
+						<option value="1">Пуговицы</option>
+						<option value="2">Шуба</option>
+						<option value="3">Мех</option>
+					</select>
+			</div>
+			<div id="checkboxes">
+				<label><input type="checkbox" name="prop1"> Кролик</label>
+				<label><input type="checkbox" name="prop2"> Песец</label>
+				<label><input type="checkbox" name="prop3"> Соболь</label>
+            </div>
+            <div id="radios">
+                <label><input type="radio" name="prodOptions" value="option1"> Искусственный</label>
+                <label><input type="radio" name="prodOptions" value="option2"> Коротшерстный</label>
+                <label><input type="radio" name="prodOptions" value="option3"> Натуральный</label>
+	       </div>
+			<h4>Стоимость заказа:</h4>
+			<div class="text-body" id="prodPrice"></div>
+	    </form>
+		</div>
+	</div>
+	<script src="README.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+	</body>
+</html>

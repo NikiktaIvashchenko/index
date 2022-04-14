@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  h3 { color: white;}
+  .list,
+.form {
+    max-width: 960px;
+    background-color: #979797;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 25px;
+}
+  img {
+    width: 60%;
+  
+  }
